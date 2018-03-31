@@ -1,7 +1,25 @@
+@font-face {
+    font-family:'Super Mario 256';
+    src: url('../fonts/Super Mario 256.eot');
+	src: url('../fonts/Super Mario 256.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Super Mario 256.woff2') format('woff2'),
+		url('../fonts/Super Mario 256.woff') format('woff'),
+		url('../fonts/Super Mario 256.svg#Super Mario 256') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-007C;
+}
+h1{
+    font-family: "Super Mario 256";
+}
 .marioImage{
     cursor: pointer;
     
 }
 #peach{
     height: 50%;
+}
+body{
+    background-image: url("../images/mariobackground.png"); 
 }
