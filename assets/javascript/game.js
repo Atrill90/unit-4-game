@@ -61,7 +61,8 @@ var playerOne = false;
 $(".cards").on("click",'.marioImage',function (e) {
     
     var targetSelected = e.currentTarget.id;
-    $("#playerOne").append(this); 
+    $(".attackspot").append(this); 
+    
     var $leftover = $(".card1"); 
     $('#enemy').append($leftover);
      
@@ -71,12 +72,12 @@ $(".cards").on("click",'.marioImage',function (e) {
 $("#enemy").on("click", '.marioImage', function(){
    
     $('#battleground').append($('#playerOne .marioImage'));
-    $("#battleground").append(this);
+    $(".defensespot").append(this);
 
-    console.log(this);
-    $("#enemy .marioImage").hide();
-    $("#enemy").append("<button>")
-    .text("HIT EM")
+    // console.log(this);
+    $("#enemy").hide();
+    $(".hitspot").append("<img class='mushroomBtn img-fluid'>");
+    $(".mushroomBtn").attr("src", "assets/images/mushroom.png")
     .click(function(){
      var user =   $('.marioImage:nth-child(1)');
      var enemy = $('.marioImage:nth-child(2)');

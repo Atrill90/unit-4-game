@@ -17,9 +17,16 @@ h1{
     cursor: pointer;
     
 }
-#peach{
-    height: 50%;
-}
+
 body{
     background-image: url("../images/mariobackground.png"); 
+}
+.mushroomBtn{
+   cursor: pointer;
+    width: 60%;
+    
+}
+.mushroomBtn:active{
+    transform: scale(.9);
+    
 }
