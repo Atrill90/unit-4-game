@@ -10,7 +10,7 @@
     font-stretch: normal;
     unicode-range: U+0020-007C;
 }
-h1{
+h1,h2,h3{
     font-family: "Super Mario 256";
 }
 .marioImage{
