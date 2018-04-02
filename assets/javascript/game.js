@@ -86,7 +86,7 @@ $("#enemy").on("click", '.marioImage', function(){
 
     const attack = function(attacker, defender){
         // console.log(attacker, defender);
-        characterStats.attackerDamage = attacker.damage;
+        
         console.log(characterStats.attackerDamage);
         if(characterStats.attackerDamage){
             let twoXdamage = attacker.damage*2;
@@ -97,7 +97,7 @@ $("#enemy").on("click", '.marioImage', function(){
             displayStats(characterStats.defCurrHealth,characterStats.attCurrHealth);
         }
             
-
+// this links up the image id with their object attributes
     }
         function setAttackerStats(attackerId) {
             
@@ -134,7 +134,7 @@ $("#enemy").on("click", '.marioImage', function(){
         }
           
 
-
+//this links up the defender with their stats
         function setDefenderStats(defenderId){
             switch(defenderId) {
                 case "mario":
@@ -169,24 +169,20 @@ $("#enemy").on("click", '.marioImage', function(){
         }
         
         
-
+// Show the current health of both fighters
 
         function displayStats(defCurrHealth,attCurrHealth){
-            $(".defensestats").html(`<h2 class="text-center">Defenders Health</h2><br><h3 class="text-center">${defCurrHealth}</h3>`);
-            $(".attackstats").html(`<h2 class="text-center">Attackers Health</h2><br><h3 class="text-center">${attCurrHealth}</h3>`);
+            $(".defensestats").html(`<h2 class="text-center">Enemy Health</h2><br><h3 class="text-center">${defCurrHealth}</h3>`);
+            $(".attackstats").html(`<h2 class="text-center">Your Health</h2><br><h3 class="text-center">${attCurrHealth}</h3>`);
         }
-// Health, Damage, Name 
 
+//what I didn't accomplish
+              // the attacker should keep getting more damage as they attack
+              //once the defenders health hits 0 pick a new enemy
+              // If player defeats all enemy prompt them with a win 
+              // If players health hits 0 prompt them with a loss. 
 
-// Pick an Opponent with another click
-
-// Opponent needs health
-
-// Opponent needs damage
-
-
-
-// I need to attack the Opponent click
+    
 
 
 

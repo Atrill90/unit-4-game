@@ -8,3 +8,6 @@
 
 * If you manage to kill your foe select a new opponent.
 
+* Once you've defeated all the opponents you've won!
+
+* If your characters health goes to 0, you've lost. 
